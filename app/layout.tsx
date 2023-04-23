@@ -1,5 +1,6 @@
 import './globals.css'
 
+import { Analytics } from '@vercel/analytics/react'
 import { Inter } from 'next/font/google'
 
 import Header from '@/components/header'
@@ -35,6 +36,7 @@ export default function RootLayout({
         <div className="relative flex h-full flex-1 flex-col">
           <Header />
           <main>{children}</main>
+          <Analytics />
         </div>
       </body>
     </html>
